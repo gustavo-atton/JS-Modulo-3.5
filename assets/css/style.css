@@ -1,0 +1,209 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+
+  color: rgb(255, 255, 255);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+main {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+strong {
+  margin-left: 0.2rem;
+  display: block;
+}
+
+.sec1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ingresoDatos {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  background-color: rgba(2, 78, 141, 0.819);
+  background: linear-gradient(35deg, rgb(16, 85, 169), rgb(0, 204, 255));
+  color: white;
+  font-style: bold;
+  text-transform: uppercase;
+  font-size: medium;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.534);
+}
+
+button:hover {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+}
+
+button:focus {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+}
+
+input[type="text"] {
+  border: 1px solid rgb(0, 0, 0);
+  height: 2.5rem;
+  background-color: rgba(34, 196, 255, 0.824);
+  width: 100%;
+  color: rgb(2, 13, 64);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  padding: 0 0.6rem;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.534);
+}
+
+.sec2 {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.contadores {
+  font-size: 1rem;
+  background-color: rgba(10, 216, 247, 0.805);
+  border: 2px solid;
+
+  border-color: black;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   border-radius: 20px;
+  background-color: rgba(20, 32, 40, 0.642);
+  color: rgb(8, 231, 243);
+
+}
+.tasker {
+  border: 1px solid rgb(0, 213, 255);
+  color: rgb(164, 220, 255);
+  border-radius: 20px;
+  padding: 1rem 1.5rem;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.534);
+  background-color: rgba(21, 35, 44, 0.642);
+}
+
+.titles,
+.datos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  gap: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.task {
+  gap: 1rem;
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+}
+
+li {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 0 1rem;
+}
+
+.triggers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+input[type="checkbox"] {
+  accent-color: rgb(12, 63, 114);
+  background-color: rgb(12, 63, 114);
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.eliminar {
+  cursor: pointer;
+  color: rgb(212, 0, 0);
+  font-size: 0.5 rem;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 0rem, 0rem;
+  background-color: rgba(3, 34, 48, 0.455);
+  color: white;
+}
+
+span {
+  color: rgba(37, 211, 255, 0.744);
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+  font-size: 2rem;
+}
+
+@media (min-width: 700px) {
+  body {
+    margin: auto;
+    align-items: center;
+  }
+  .sec1 {
+    width: 700px;
+    align-items: start;
+    justify-content: center;
+  }
+  .tasker {
+    width: 450px;
+  }
+  .sec2 {
+    flex-direction: row;
+  }
+}
+
+.tachado {
+  text-decoration: line-through;
+  color: gray;
+}
